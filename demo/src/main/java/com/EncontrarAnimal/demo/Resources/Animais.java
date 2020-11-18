@@ -2,11 +2,11 @@ package com.EncontrarAnimal.demo.Resources;
 
 public class Animais {
 	
-	public String tipoAnimal;
-	public String raca;
-	public String cor;
-	public String bairro;
-	public String descricaoAdicional;
+	private String tipoAnimal;
+	private String raca;
+	private String cor;
+	private String bairro;
+	private String descricaoAdicional;
 	
 	public String getTipoAnimal() {
 		return tipoAnimal;
