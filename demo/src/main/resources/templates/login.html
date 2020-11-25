@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+
+    <title>Login</title>
+</head>
+<body class="fundo">
+    <form id="LoginForm" class="box" method="post" action="/src/main/java/cadastro/cadastroanimal/cadastroController.java">
+        <h1>Login</h1>
+        <input type="text" name="Nome_Usuario" id="NomeUsuario" placeholder="Nome de usuario" required />
+        <input type="password" name="Senha" id="SenhaUser" placeholder="Senha" required />
+        <input hidden id="VerificaLogin" name="loginSucesso" value="false" />
+        <input type="submit" id="BtnLogin" value="Entrar" />
+    </form>
+    <div class="box2">
+    </div>
+
+</body>
+</html>

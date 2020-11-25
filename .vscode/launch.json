@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CadastroanimalApplication<demo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.EncontrarAnimal.CadastroanimalApplication",
+            "projectName": "demo",
+            "args": ""
+        }
+    ]
+}

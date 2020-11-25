@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>S.O.S Animais</title>
+
+    <link th:href="@{/css/cadastro.css}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+            <h1><img  th:src="@{/img/Logo.jpg}" style="width:150px" class="logoprincipal" alt="Logo"></h1>
+			<nav>
+
+				<ul>
+                    <li><a class="Menu" th:href="@{/}">Home</a></li>
+					<li><a class="Menu" th:href="@{/cadastro}">Cadastro</a></li>
+					<li><a class="Menu" th:href="@{/login}">Entrar</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <main class="main-contato">
+        <form class="form-centralizado">
+            <label for="nomeSobrenome">Nome:</label>
+            <input type="text" id="nomeSobrenome" class="input-padrao" required placeholder="Digite o nome" />
+
+            <label for="nomeSobrenome">Raça:</label>
+            <input type="text" id="raca" class="input-padrao" required placeholder="Digite a raça" />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="teste@email.com" />
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx" />
+
+            <label for="mensagem">Observaçoes:</label>
+            <textarea cols="30" rows="10" id="obs" class="input-padrao" required> </textarea>
+
+            <fieldset>
+
+                <legend>Como prefere o nosso contato?</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="E-email" id="radio-email">
+                    E-mail</label>
+
+
+                <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone</label>
+
+
+                <label for="radio-Whatsaap"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsaap"
+                        checked> WhatsApp</label>
+
+            </fieldset>
+
+
+            <input type="submit" id="teste" value="Enviar formulario" class="enviar">
+
+
+        </form>
+
+    </main>
+    <footer>
+    </footer>
+
+</body>
+
+</html>
